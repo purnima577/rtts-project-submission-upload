@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Catch the Falling Items</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-extras@6.1.1/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-physics-system@4.0.1/dist/aframe-physics-system.min.js"></script>
+    <script src="game.js"></script>
+  </head>
+  <body>
+    <a-scene physics="gravity: 0" background="color: #000">
+
+      <a-assets>
+        <a-asset-item id="sky-scene" src="assets/sky_scene/scene.gltf"></a-asset-item>
+        <a-asset-item id="item-model" src="assets/item_model/scene.gltf"></a-asset-item>
+      </a-assets>
+
+      <!-- Environment Sky -->
+      <a-entity gltf-model="#sky-scene" position="0 0 0" scale="0.5 0.5 0.5"></a-entity>
+
+      <!-- Player (camera-controlled) -->
+      <a-entity id="player" camera wasd-controls position="0 1.6 10">
+       
+  
+
+    </a-scene>
+  </body>
+</html>
